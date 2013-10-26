@@ -1,0 +1,15 @@
+extends ../layout
+
+block content
+	h1= title
+
+	form(action="/users/create", method="post")
+		fieldset
+			label Name
+			input(type="text", name="name")
+
+		fieldset		
+			label Email
+			input(type="email", name="email")
+
+		button(type="submit") Add User
